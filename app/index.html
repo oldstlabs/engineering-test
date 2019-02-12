@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" ng-app="newsApp">
+  <head>
+    <meta charset="utf-8">
+    <title>News</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/lucyd/lucyd.module.js"></script>
+    <script src="core/lucyd/lucyd.service.js"></script>
+    <script src="news-list/news-list.module.js"></script>
+    <script src="news-list/news-list.component.js"></script>
+
+    <style>
+    body {
+      padding: 20px;
+    }
+
+    h1 {
+      border-bottom: 1px solid gray;
+      margin-top: 0;
+    }
+
+    .news {
+      list-style: none;
+    }
+
+    .news li {
+      clear: both;
+      padding-top: 15px;
+    }
+
+    .thumb {
+      float: left;
+      height: 100px;
+      margin: -0.5em 1em 1.5em 0;
+      padding-bottom: 1em;
+      width: 100px;
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <div class="view-container">
+      <div ng-view class="view-frame"></div>
+    </div>
+
+  </body>
+</html>
