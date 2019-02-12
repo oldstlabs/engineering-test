@@ -12,6 +12,14 @@
           </button>
         </form>
 
+        <button ng-click="$ctrl.orderBy = 'title'; $ctrl.onChange()">
+          Order by title
+        </button>
+
+        <button ng-click="$ctrl.orderBy = 'published_on'; $ctrl.onChange()">
+          Order by date
+        </button>
+
       </p>
 
     </div>
